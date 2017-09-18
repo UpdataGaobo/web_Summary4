@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>css选择器</title>
+        <style>
+            div{
+                width: 500px;
+                height: 300px;
+                background-color: brown;
+                border: 1px solid #000;
+            }
+            ul,li{
+                margin: 0;
+                padding: 0;
+            }
+            #Div1>ul{
+                height: 100%;
+                width: 800px;
+                background-color: #e55c27;
+            }
+            #Div1>ul>li ul{
+                height: 150px;
+                width: 100%;
+                background-color: #de2d71;
+            }
+            #Div1 + .Div2{
+                background-color: darkgoldenrod;
+            }
+            /*
+            .Div2{
+            background-color: aqua;
+            }
+            #Div1 {
+            background-color: cadetblue;
+            }
+            */
+        </style>
+    </head>
+    <body>
+        <!--id选择器 100-->
+        <div id="Div1">
+            <ul>
+                <li>我是第一级的li
+                    <ul>
+                        <li>我是第二级的li</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--class选择器 10-->
+        <div class="Div2"></div>
+        <!--标签选择器 1-->
+        <!--        <div></div>-->
+    </body>
+</html>

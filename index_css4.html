@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS文本概述</title>
+        <style>
+            body{
+                overflow-x: hidden;
+            }
+            article{
+                width: 1000px;
+                border:1px solid #000;
+                border-radius: 20px;
+                margin: 0 auto;
+            }
+            .left {
+                text-align: left;
+            }
+            .center {
+                text-align: center;
+            }
+            .right {
+                text-align: right;
+            }
+            .ccc {
+                text-indent: 2em;
+                color: crimson;
+/*
+                text-decoration: line-through;
+                text-transform: uppercase;
+*/
+/*                text-shadow: 0px -2px 2px rgba(0, 0, 0, 0.77);*/
+                line-height:20px;
+                word-spacing: 100px;
+/*                letter-spacing: 100px;*/
+                width: 1000px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <p class="left"><span>123</span></p>
+            <p class="center"><span>456</span></p>
+            <p class="right"><span>789</span></p>
+            <p class="ccc">当然，由于历史原因，有时候不得不继续使用zh-CN。比如中文维基百科，沿用了传统的zh-CN/zh-HK/zh-SG/zh-TW（按照标准应该使用 zh-cmn-Hans-CN、zh-cmn-Hant-HK、zh-cmn-Hans-SG、zh-cmn-Hant-TW）。这时候，合理的软件行为，是将 zh-CN 等转化为 zh-cmn-Hans（即转化为最常见的误用所对应的实际标准写法）。作者：贺师俊链接：https://www.zhihu.com/question/20797118/answer/16809331来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+        </article>
+    </body>
+</html>
